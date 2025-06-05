@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apakah Mikrotik Lebih Baik dari Cisco?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">Uniscoms</span>
+    <div class="nav-links">
+      <a href="../Home.html">Home</a>
+      <a href="../Komponen.html">Komponen Iot</a>
+      <a href="../praktik.html">Praktik</a>
+      <a href="../diskusi.html" class="active">Diskusi</a>
+      <a href="../profile.html">Profile</a>
+    </div>
+    <button class="login-btn"><a href="../login.html" style="color:#fff;text-decoration:none;">Login</a></button>
+  </nav>
+  <div class="container">
+    <div class="topic-title">Apakah Mikrotik Lebih Baik dari Cisco?</div>
+    <div class="topic-content">
+      Mikrotik dan Cisco adalah dua vendor perangkat jaringan yang populer. Mikrotik terkenal dengan harga yang terjangkau dan fitur yang lengkap untuk skala kecil-menengah, sedangkan Cisco dikenal dengan kehandalan, keamanan, dan fitur enterprise untuk skala besar. Pilihan terbaik tergantung kebutuhan, anggaran, dan tingkat keahlian pengguna. Diskusikan pengalamanmu menggunakan kedua perangkat ini di sini!
+    </div>
+    <a href="../diskusi.html" class="btn-back">&larr; Kembali ke Forum</a>
+    <div class="comment-list" id="comments"></div>
+    <form class="comment-form" onsubmit="return addComment()">
+      <input type="text" id="inputComment" placeholder="Tulis komentar..." required>
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+  <script>
+    function addComment() {
+      var input = document.getElementById('inputComment');
+      var list = document.getElementById('comments');
+      if(input.value.trim() !== "") {
+        var div = document.createElement('div');
+        div.className = "comment";
+        div.innerText = input.value;
+        list.appendChild(div);
+        input.value = "";
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>

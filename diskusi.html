@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Diskusi TKJ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">TKJII</span>
+    <div class="nav-links">
+      <a href="Home.html">Home</a>
+      <a href="Komponen.html">Komponen Jaringan</a>
+      <a href="praktik.html">Praktik</a>
+      <a href="diskusi.html">Diskusi</a>
+      <a href="profile.html">Profile</a>
+    </div>
+    <button class="login-btn"><a href="login.html">Login</a></button>
+  </nav>
+
+    <!-- Hiasan Atas -->
+    <svg class="decor-top" width="220" height="180" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="180" cy="40" rx="60" ry="40" fill="#1666f1" fill-opacity="0.13"/>
+        <ellipse cx="120" cy="100" rx="40" ry="20" fill="#1666f1" fill-opacity="0.09"/>
+    </svg>
+
+    <section class="forum-section container">
+        <h2 class="forum-title">Forum Diskusi TKJ</h2>
+        <hr style="width:80px; border:1.5px solid #1666f1; margin:0 auto 32px auto;">
+        <div class="accordion" id="forumAccordion">
+            <!-- Topik 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                        OS Mana yang Lebih Cocok untuk Server?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/topic1.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments1"></div>
+                        <form class="comment-form" onsubmit="return addComment(1)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Topik 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                        Wired vs Wireless: Mana Lebih Stabil?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/topic2.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments2"></div>
+                        <form class="comment-form" onsubmit="return addComment(2)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Topik 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                        Masalah Umum Saat Praktik Jaringan
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/topic3.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments3"></div>
+                        <form class="comment-form" onsubmit="return addComment(3)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Topik 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                        Etika Menggunakan Jaringan Sekolah
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/topic4.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments4"></div>
+                        <form class="comment-form" onsubmit="return addComment(4)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Topik 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                        Apakah Mikrotik Lebih Baik dari Cisco?
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/topic5.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments5"></div>
+                        <form class="comment-form" onsubmit="return addComment(5)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Topik 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                        Apa itu VLAN dan Manfaatnya?
+                    </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/topic6.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments6"></div>
+                        <form class="comment-form" onsubmit="return addComment(6)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Topik 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+                        Tips Mempersiapkan Ujian UKK TKJ
+                    </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/Topic7.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments7"></div>
+                        <form class="comment-form" onsubmit="return addComment(7)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Topik 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+                        Pengalaman Magang di Bidang Jaringan
+                    </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/topic8.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments8"></div>
+                        <form class="comment-form" onsubmit="return addComment(8)">
+                            <div class="mb-2">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Topik 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading9">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
+                        Teknologi Cloud: Ancaman atau Solusi?
+                    </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/topic9.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments9"></div>
+                        <form class="comment-form" onsubmit="return addComment(9)">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Topik 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading10">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10">
+                        Diskusi: Masa Depan Jurusan TKJ
+                    </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#forumAccordion">
+                    <div class="accordion-body">
+                        <a href="diskusi/topic10.html" class="btn btn-outline-primary btn-sm btn-detail">Lihat Detail &amp; Cara</a>
+                        <div class="comment-list" id="comments10"></div>
+                        <form class="comment-form" onsubmit="return addComment(10)">
+                            <div class="mb-2">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hiasan Bawah -->
+    <svg class="decor-bottom" width="220" height="180" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="180" cy="40" rx="60" ry="40" fill="#1666f1" fill-opacity="0.13"/>
+        <ellipse cx="120" cy="100" rx="40" ry="20" fill="#1666f1" fill-opacity="0.09"/>
+    </svg>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Komentar sederhana (hanya di sisi client, tidak tersimpan permanen)
+        function addComment(idx) {
+            var input = document.getElementById('input' + idx);
+            var list = document.getElementById('comments' + idx);
+            if(input.value.trim() !== "") {
+                var div = document.createElement('div');
+                div.className = "comment";
+                div.innerText = input.value;
+                list.appendChild(div);
+                input.value = "";
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

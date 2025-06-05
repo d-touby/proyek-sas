@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OS Mana yang Lebih Cocok untuk Server?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">Uniscoms</span>
+    <div class="nav-links">
+      <a href="../Home.html">Home</a>
+      <a href="../Komponen.html">Komponen Iot</a>
+      <a href="../praktik.html">Praktik</a>
+      <a href="../diskusi.html" class="active">Diskusi</a>
+      <a href="../profile.html">Profile</a>
+    </div>
+    <button class="login-btn"><a href="../login.html" style="color:#fff;text-decoration:none;">Login</a></button>
+  </nav>
+  <div class="container">
+    <div class="topic-title">OS Mana yang Lebih Cocok untuk Server?</div>
+    <div class="topic-content">
+      Pemilihan sistem operasi (OS) untuk server sangat penting karena akan mempengaruhi performa, keamanan, dan kemudahan manajemen server. OS yang umum digunakan untuk server antara lain Linux (seperti Ubuntu Server, CentOS, Debian), Windows Server, dan FreeBSD. Linux banyak dipilih karena gratis, stabil, dan memiliki komunitas besar, serta mendukung banyak aplikasi server. Windows Server cocok untuk lingkungan yang membutuhkan integrasi dengan produk Microsoft dan aplikasi berbasis Windows. FreeBSD dikenal stabil dan aman, meski penggunaannya tidak sebanyak Linux. Pilihan terbaik tergantung kebutuhan, keahlian admin, dan aplikasi yang akan dijalankan di server.
+    </div>
+    <a href="../diskusi.html" class="btn-back">&larr; Kembali ke Forum</a>
+    <div class="comment-list" id="comments"></div>
+    <form class="comment-form" onsubmit="return addComment()">
+      <input type="text" id="inputComment" placeholder="Tulis komentar..." required>
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+  <script>
+    function addComment() {
+      var input = document.getElementById('inputComment');
+      var list = document.getElementById('comments');
+      if(input.value.trim() !== "") {
+        var div = document.createElement('div');
+        div.className = "comment";
+        div.innerText = input.value;
+        list.appendChild(div);
+        input.value = "";
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>

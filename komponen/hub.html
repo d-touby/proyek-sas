@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub - Komponen Jaringan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">TKJII</span>
+    <div class="nav-links">
+      <a href="../Home.html">Home</a>
+      <a href="../Komponen.html">Komponen Iot</a>
+      <a href="../praktik.html">Praktik</a>
+      <a href="../diskusi.html">Diskusi</a>
+      <a href="../profile.html">Profile</a>
+    </div>
+    <button class="login-btn"><a href="../login.html">Login</a></button>
+  </nav>
+  <section class="device-section">
+    <div class="device-card">
+      <div style="display:flex; flex-direction:column; align-items:center; flex:1;">
+        <div class="device-icon">
+          <!-- Icon Hub -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <circle cx="8" cy="8" r="3"/>
+            <circle cx="2" cy="2" r="1.5"/>
+            <circle cx="14" cy="2" r="1.5"/>
+            <circle cx="2" cy="14" r="1.5"/>
+            <circle cx="14" cy="14" r="1.5"/>
+            <line x1="8" y1="8" x2="2" y2="2" stroke="#fff" stroke-width="1"/>
+            <line x1="8" y1="8" x2="14" y2="2" stroke="#fff" stroke-width="1"/>
+            <line x1="8" y1="8" x2="2" y2="14" stroke="#fff" stroke-width="1"/>
+            <line x1="8" y1="8" x2="14" y2="14" stroke="#fff" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="device-title">Hub</div>
+        <div class="device-desc">
+          Hub adalah perangkat jaringan yang digunakan untuk menghubungkan beberapa komputer atau perangkat lain dalam satu jaringan lokal (LAN). Hub bekerja pada layer 1 (physical layer) model OSI dan berfungsi sebagai titik pusat yang menerima data dari satu perangkat, lalu membroadcast data tersebut ke semua port yang terhubung. Hal ini menyebabkan semua perangkat menerima data meskipun bukan penerima yang dituju, sehingga dapat menimbulkan kemacetan jaringan jika digunakan dalam jaringan besar. Hub tidak dapat memfilter data atau menentukan tujuan pengiriman data, sehingga keamanannya rendah dan efisiensinya kurang dibandingkan switch. Saat ini, penggunaan hub sudah mulai ditinggalkan dan digantikan oleh switch yang lebih cerdas dan efisien.
+        </div>
+        <ul class="device-detail-list">
+          <li><b>Fungsi utama:</b> Menghubungkan beberapa perangkat dalam satu jaringan lokal dan membroadcast data ke semua perangkat.</li>
+          <li><b>Contoh penggunaan:</b> Hub digunakan pada jaringan kecil atau untuk keperluan percobaan laboratorium jaringan.</li>
+          <li><b>Kekurangan:</b> Tidak bisa memfilter data, rawan kemacetan jaringan, dan kurang aman.</li>
+        </ul>
+        <a href="../Komponen.html" class="device-back-link">&larr; Kembali ke Daftar Perangkat</a>
+      </div>
+      <div style="flex:1; display:flex; align-items:center; justify-content:center;">
+        <img src="gbr/Hub.jpg" alt="Contoh Hub" class="device-img">
+      </div>
+    </div>
+  </section>
+  <svg class="decor-top" width="220" height="180" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="180" cy="40" rx="60" ry="40" fill="#1666f1" fill-opacity="0.13"/>
+    <ellipse cx="120" cy="100" rx="40" ry="20" fill="#1666f1" fill-opacity="0.09"/>
+  </svg>
+  <svg class="decor-bottom" width="220" height="180" viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="180" cy="40" rx="60" ry="40" fill="#1666f1" fill-opacity="0.13"/>
+    <ellipse cx="120" cy="100" rx="40" ry="20" fill="#1666f1" fill-opacity="0.09"/>
+  </svg>
+</body>
+</html>
